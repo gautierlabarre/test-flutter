@@ -1,0 +1,87 @@
+name: personalimprover
+description: A simple application to reach goals and record messages
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.6.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Authentication
+  firebase_auth: ^0.16.1
+  google_sign_in: ^4.4.6
+
+  # Other Firebase Services
+  firebase_storage: 3.1.5
+  firebase_messaging: ^6.0.16
+  cloud_firestore: ^0.13.6
+
+  # Handling audio
+  audioplayers: ^0.15.1
+  flutter_audio_recorder: ^0.5.5
+
+  # Handling QRCode
+  qr_flutter: ^3.2.0
+  barcode_scan: ^3.0.1
+
+  # Handling Filesystem
+  path_provider: ^1.6.9
+  flutter_share: ^1.0.2+1
+
+  # Design thingy
+  flushbar: ^1.10.4
+  dynamic_theme: ^1.0.1
+  circular_bottom_navigation: ^1.0.1
+  sliding_up_panel: ^1.0.2
+
+  # Others
+  i18n_extension: ^1.3.8
+  local_auth: ^0.6.2+3
+  connectivity: ^0.4.8+6
+  cupertino_icons: ^0.1.3
+  flutter_local_notifications: ^1.4.3
+  wakelock: ^0.1.4+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.7.5
+  mockito: ^4.1.1
+  pedantic: 1.8.0+1
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+  fonts:
+    - family: SF Pro Display
+      fonts:
+        - asset: fonts/SF-Pro-Display-Ultralight.otf
+          weight: 100
+        - asset: fonts/SF-Pro-Display-Thin.otf
+          weight: 200
+        - asset: fonts/SF-Pro-Display-Light.otf
+          weight: 300
+        - asset: fonts/SF-Pro-Display-Regular.otf
+          weight: 400
+        - asset: fonts/SF-Pro-Display-Medium.otf
+          weight: 500
+        - asset: fonts/SF-Pro-Display-Semibold.otf
+          weight: 600
+        - asset: fonts/SF-Pro-Display-Bold.otf
+          weight: 700
+        - asset: fonts/SF-Pro-Display-Heavy.otf
+          weight: 800
+        - asset: fonts/SF-Pro-Display-Black.otf
+          weight: 900
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/personalImprover.png"
